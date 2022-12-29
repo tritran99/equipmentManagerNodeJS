@@ -1,0 +1,19 @@
+<h3>{{viewTitle}}</h3>
+<div class="d-flex justify-content-end">
+       <a class="btn btn-warning" href="/register"><i class="fa fa-plus"></i> Register</a> 
+    </div>
+<form action="/login" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{employee._id}}">
+    <div class="form-group">
+        <label>Username</label>
+        <input id="userName" type="text" class="form-control" name="userName" placeholder="User Name" value="{{employee.typeEquipment}}">
+    </div>
+    <div class="form-group">
+        <label>PassWord</label>
+        <input id="passWord" type="text" class="form-control" name="passWord" placeholder="PassWord" value="{{employee.nameDevice}}">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info">Login</button>
+        <a class="btn btn-secondary" href="">Logout</a>
+    </div>
+</form>
